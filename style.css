@@ -11,18 +11,13 @@ header{
     background-color: crimson;
     display: flex;
 }
-/* p{
-    padding: 0 10px;
-    text-align: justify;
-    margin-bottom: 20px;
-} */
 .text-content{
     padding: 0 20px;
     text-align: justify;
     margin-bottom: 20px;
 }
 .text-content {
-    line-height: 1.8; /* hoặc 24px, 30px tùy ý */
+    line-height: 1.8; 
 }
 
 .avtar{
@@ -143,15 +138,6 @@ margin-right: 20px;
 .progress-container{
     width: 80%;
 }
-/* .tag-content ul{
-    margin-top: 12px;
-}
-
-.tag-content ul li{
-    list-style-type: square;
-    margin-bottom: 8px;
-} */
-
 .tag{
     font-size: 18px;
     color: black;
@@ -197,4 +183,56 @@ margin-right: 20px;
 }
 html {
     scroll-behavior: smooth;
+}
+
+
+/* Hiệu ứng fade-in */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, .container, .slider-content, .alibaba, .text-content, .tag-content {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    animation-delay: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffffff;
+    background-color: #f16e6e;
+    padding: 6px 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.container, header, .left, .content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: crimson;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    z-index: 999;
+}
+.text-content i{
+    font-size: 23px;
+    color: #fd3456;
+}
+.tag i{
+    color: #f24141;
 }
