@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hồ Sơ Cá Nhân</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">Hồ Sơ Cá Nhân</h1>
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Trang Chủ</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> Giới Thiệu</a></li>
+        <li><a href="#skills"><i class="fas fa-cogs"></i> Kỹ Năng</a></li>
+        <li><a href="#projects"><i class="fas fa-folder-open"></i> Dự Án</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Liên Hệ</a></li>
+      </ul>
+      <div class="cta">
+        <a href="#contact" class="cta-btn">Liên hệ với tôi</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Giới thiệu -->
+  <section id="home" class="hero-section">
+    <div class="container hero-content">
+      <div class="hero-image">
+        <img src="../jpg/avt.png" alt="Ảnh đại diện" />
+      </div>
+      <div class="hero-text">
+        <div class="typing-container">
+          <h2>Xin chào, tôi là [Tên bạn]</h2>
+        </div>
+        <p>Nguyễn Thế Anh</p>
+        <p>Lập trình viên Front-end | Thiết kế giao diện</p>
+        <div class="social-icons">
+          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+          <a href="https://github.com/imnoname999"><i class="ri-github-fill"></i></a>
+        </div>
+        <a href="#projects" class="cta-button">Xem Dự Án</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Giới thiệu bản thân -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-img">
+        <img src="../jpg/avt.png" alt="Ảnh cá nhân" />
+      </div>
+      <div class="about-content">
+        <h2>Về Tôi</h2>
+        <p>Tôi là một lập trình viên web đầy đam mê. Tôi chuyên tạo ra các trang web hiện đại, đẹp mắt và dễ sử dụng, sử dụng HTML, CSS, JavaScript cùng các framework như React và Vue.js.</p>
+        <p>Tôi luôn học hỏi không ngừng và theo sát các xu hướng công nghệ mới nhất để cải thiện bản thân.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kỹ năng -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <h2>Kỹ Năng Của Tôi</h2>
+      <div class="skills-content">
+        <div class="skill-item">
+          <i class="fab fa-html5"></i>
+          <h3>HTML5</h3>
+          <p>Xây dựng cấu trúc trang web chuẩn SEO và hiện đại.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS3</h3>
+          <p>Thiết kế giao diện đẹp mắt với Flexbox, Grid và animation.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <p>Tạo giao diện tương tác với JS và các thư viện hiện đại.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-node-js"></i>
+          <h3>Node.js</h3>
+          <p>Xây dựng backend linh hoạt, hiệu suất cao.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <p>Phát triển ứng dụng web hiện đại dựa trên component.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-php"></i>
+          <h3>PHP</h3>
+          <p>Lập trình web động, xử lý dữ liệu hiệu quả.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-git-alt"></i>
+          <h3>Git</h3>
+          <p>Quản lý phiên bản và cộng tác trên GitHub.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-sass"></i>
+          <h3>SASS</h3>
+          <p>Viết CSS gọn gàng, dễ bảo trì bằng SASS.</p>
+        </div>
+        <div class="skill-item">
+          <i class="fab fa-bootstrap"></i>
+          <h3>Bootstrap</h3>
+          <p>Thiết kế responsive nhanh chóng với Bootstrap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dự án -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <h2>Dự Án</h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <img src="../jpg/p1.png" alt="Dự án 1" />
+          <h3>Weather app</h3>
+          <p>xem thời tiết trên khắp thế thới ở bất cứ đâu.</p>
+          <a href="#" class="project-link">Xem Chi Tiết</a>
+        </div>
+        <div class="project-item">
+          <img src="../jpg/p2.png" alt="Dự án 2" />
+          <h3>Album web</h3>
+          <p>xem các ảnh và mẫu chuyện nhỏ về veil.</p>
+          <a href="#" class="project-link">Xem Chi Tiết</a>
+        </div>
+        <div class="project-item">
+          <img src="../jpg/p3.png" alt="Dự án 3" />
+          <h3>Music app</h3>
+          <p>Nghe các đoạn nhạc trong menu.</p>
+          <a href="#" class="project-link">Xem Chi Tiết</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liên hệ -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <h2>Liên Hệ</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Kết nối với tôi</h3>
+          <p>Nếu bạn có dự án hoặc cần tư vấn, đừng ngần ngại liên hệ!</p>
+          <ul class="contact-details">
+            <li><i class="ri-mail-fill"></i> Email: nguyentheanh2404.com</li>
+            <li><i class="ri-phone-fill"></i> Điện thoại: 094 4937 141</li>
+            <li><i class="ri-map-pin-fill"></i> Địa điểm: TP.HCM, Việt Nam</li>
+          </ul>
+        </div>
+        <div class="contact-form">
+          <h3>Gửi Tin Nhắn</h3>
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" name="name" placeholder="Tên của bạn" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Địa chỉ email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tin nhắn của bạn" required></textarea>
+            </div>
+            <a href="https://wa.me/840123456789?text=Chào%20bạn,%20mình%20muốn%20trao%20đổi%20công%20việc!" target="_blank">
+              <button type="submit" class="submit-btn">Gửi Tin Nhắn</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="start">
+      <h3>Bắt đầu dự án</h3>
+      <p>Bạn muốn làm việc cùng tôi? Hãy trò chuyện ngay, tôi mời cà phê!</p>
+      <button>Bắt đầu ngay</button>
+    </div>
+    <div class="cols">
+      <div class="about-col">
+        <h3>[Tên bạn]</h3>
+        <p>Lập trình viên Front-end | Thiết kế giao diện</p>
+      </div>
+      <div class="links-col">
+        <h4>Liên kết</h4>
+        <a href="#home">Trang Chủ</a>
+        <a href="#about">Giới Thiệu</a>
+        <a href="#skills">Kỹ Năng</a>
+        <a href="#projects">Dự Án</a>
+        <a href="#contact">Liên Hệ</a>
+      </div>
+      <div class="links-col">
+        <h4>Mạng xã hội</h4>
+        <a href="#">Facebook</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="news-col">
+        <h4>Nhận bản tin</h4>
+        <p>Nhập email để nhận thông tin mới nhất</p>
+        <form id="newsletter-form">
+          <input type="email" id="newsletter-email" placeholder="Địa chỉ email" required />
+          <button type="submit"><i class="ri-telegram-line"></i></button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <a href="#" class="scroll-to-top" id="scroll-to-top"><i class="ri-arrow-up-line"></i></a>
+</body>
+
+</html>
